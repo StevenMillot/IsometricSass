@@ -6,7 +6,7 @@
 		<title>IsometricSass</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 		<link rel="stylesheet" href="dist/style.min.css">
-	<link href="dist/app.b196717126d3a4037a0f.min.css" rel="stylesheet"></head>
+	<link href="dist/app.bc344196fba4604835c1.min.css" rel="stylesheet"></head>
 	<body>
 		<header>
 			<h1>IsometricSass</h1>
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<p class="prototype">
-				+grid($size, $color)
+				+grid($size, $lineweight, $color)
 			</p>
 			<div class="row">
 				<div class="col-md-6">
@@ -72,10 +72,14 @@
 $size: 1rem
 
 .grid
-	+grid($size, mediumorchid)
+	+grid($size, 1%, mediumorchid)
 	width: $size*5
 	height: $size*5</code></pre>
 				</div>
+			</div>
+			<div class="warning">
+				If the grid is too small, <strong>it is possible that the lines are too thin to be visible</strong>.
+				In this case, <strong></strong>increase the thickness of the lines.
 			</div>
 
 			<h2 id="plane"><a href="#plane" title="anchor">Plane</a></h2>
